@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/utils/app_styles.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
-
+  const CustomButton({super.key, this.backGroundColor, this.textColor});
+  final Color? backGroundColor, textColor;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -11,17 +11,20 @@ class CustomButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: () {},
         style: ElevatedButton.styleFrom(
-          backgroundColor: const Color(
-            0xff4EB7F2,
-          ),
+          backgroundColor: backGroundColor ??
+              const Color(
+                0xff4EB7F2,
+              ),
           elevation: 0,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
         ),
-        child: const Text(
+        child: Text(
           'Send Money',
-          style: AppStyles.styleSemiBold18,
+          style: AppStyles.styleSemiBold18.copyWith(
+            color: textColor,
+          ),
         ),
       ),
     );

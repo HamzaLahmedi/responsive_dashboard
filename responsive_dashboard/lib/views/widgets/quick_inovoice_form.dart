@@ -52,8 +52,24 @@ class QuickInovoiceForm extends StatelessWidget {
             ),
           ],
         ),
+        SizedBox(
+          height: 24,
+        ),
         Row(
-          children: [Expanded(child: CustomButton())],
+          children: [
+            Expanded(
+              child: CustomButton(
+                backGroundColor: Colors.transparent,
+                textColor: Color(0xff4EB7F2),
+              ),
+            ),
+            SizedBox(
+              width: 24,
+            ),
+            Expanded(
+              child: CustomButton(),
+            ),
+          ],
         )
       ],
     );

@@ -2,8 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_dashboard/views/widgets/Custom_drawer.dart';
-import 'package:responsive_dashboard/views/widgets/all_expenses.dart';
-import 'package:responsive_dashboard/views/widgets/quick_inovoice.dart';
+import 'package:responsive_dashboard/views/widgets/all_expenses_and_quick_inovoice.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -22,12 +21,7 @@ class DesktopLayout extends StatelessWidget {
         Expanded(
           flex: 2,
           child: SingleChildScrollView(
-            child: Column(
-              children: [
-                AllExpenses(),
-                QuickInovoice(),
-              ],
-            ),
+            child: AllExpensesAndQuickInovoice(),
           ),
         )
       ],
