@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/views/widgets/adptive_layout.dart';
 import 'package:responsive_dashboard/views/widgets/desktop_layout.dart';
