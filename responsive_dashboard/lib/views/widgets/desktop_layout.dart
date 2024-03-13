@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_dashboard/views/widgets/Custom_drawer.dart';
 import 'package:responsive_dashboard/views/widgets/all_expenses_and_quick_inovoice.dart';
-import 'package:responsive_dashboard/views/widgets/my_card.dart';
+import 'package:responsive_dashboard/views/widgets/dots_indicator.dart';
+import 'package:responsive_dashboard/views/widgets/my_card_page_view.dart';
+import 'package:responsive_dashboard/views/widgets/my_cards_section.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -23,7 +25,12 @@ class DesktopLayout extends StatelessWidget {
           flex: 2,
           child: AllExpensesAndQuickInovoice(),
         ),
-        Expanded(child: MyCard())
+        SizedBox(
+          width: 24,
+        ),
+        Expanded(
+          child: MyCardsSection(),
+        ),
       ],
     );
   }
