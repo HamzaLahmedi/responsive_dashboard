@@ -1,14 +1,14 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
-class IncomeChart extends StatefulWidget {
-  const IncomeChart({super.key});
+class DetailedIncomeChart extends StatefulWidget {
+  const DetailedIncomeChart({super.key});
 
   @override
-  State<IncomeChart> createState() => _IncomeChartState();
+  State<DetailedIncomeChart> createState() => _DetailedIncomeChartState();
 }
 
-class _IncomeChartState extends State<IncomeChart> {
+class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
   int activeIndex = -1;
   @override
   Widget build(BuildContext context) {
