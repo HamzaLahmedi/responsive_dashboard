@@ -12,7 +12,11 @@ class IncomeSectionBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizeConfig.width >= SizeConfig.desktop && SizeConfig.width < 1750
-        ? const Expanded(child: DetailedIncomeChart())
+        ? const Expanded(
+            child: Padding(
+            padding: EdgeInsets.all(16),
+            child: DetailedIncomeChart(),
+          ))
         : const Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [

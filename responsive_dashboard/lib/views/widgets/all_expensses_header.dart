@@ -9,16 +9,16 @@ class AllExpansesheader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return  Row(
       children: [
          Text(
           'All Expenses',
-          style: AppStyles.styleSemiBold16,
+          style: AppStyles.styleSemiBold16(context),
         ),
-         Expanded(
+       const  Expanded(
           child: SizedBox(),
         ),
-        RangeOptions()
+       const RangeOptions()
       ],
     );
   }

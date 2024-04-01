@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/utils/app_styles.dart';
 import 'package:responsive_dashboard/views/widgets/transaction_history_list_view.dart';
@@ -17,7 +19,7 @@ class TransactinHistory extends StatelessWidget {
         Text(
           '13 April 2022',
           style:
-              AppStyles.styleMedium16.copyWith(color: const Color(0xffaaaaaa)),
+              AppStyles.styleMedium16(context).copyWith(color: const Color(0xffaaaaaa)),
         ),
         const SizedBox(
           height: 16,
@@ -38,13 +40,13 @@ class TransactionHistoryHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        const Text(
+         Text(
           'Transaction History',
-          style: AppStyles.styleSemiBold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
         Text(
           'See all',
-          style: AppStyles.styleMedium16.copyWith(
+          style: AppStyles.styleMedium16(context).copyWith(
             color: const Color(0XFF4EB7F2),
           ),
         ),
